@@ -1,2 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section class="d-flex flex-column">
+  <center>
+    <div class="card custom-card">
+      <span class="text-center">
+        <div class="spinner-grow text-primary " role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </span>
+
+      <div class="card-body">
+        <h5 class="card-title fw-bold diaply-3">Budget App </h5>
+        <hr />
+        <%= link_to 'Sign in', new_user_session_path, class: 'btn bg-pri text-light  fw-bold' %>
+        <%= link_to 'Sign up', new_user_registration_path, class: 'btn btn-info text-secondary fw-bold' %>
+      </div>
+    </div>
+  </center>
+</section>

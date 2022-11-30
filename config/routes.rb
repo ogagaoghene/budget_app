@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'pages/home'
   devise_for :users
+  root to: 'pages#home'
   resources :category_payments
   resources :payments
   resources :categories
