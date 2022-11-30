@@ -6,4 +6,15 @@ class Category < ApplicationRecord
   validates :name, presence: true
   validates :icon, presence: true
 
+  def recent_payments
+    payments.order(created_at: :desc)
+  end
+
+  def total_price
+    payments.sum(&:amount)
+  end
+
+  def payments_count
+    payments.count
+  end
 end
