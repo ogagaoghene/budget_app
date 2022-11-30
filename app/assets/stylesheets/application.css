@@ -59,6 +59,13 @@ ul {
   padding: 0 !important;
 }
 
+.custom-card {
+  width: 50%;
+  margin: 140px;
+  padding: 20px;
+  border-radius: 40px;
+}
+
 .devise__grid_container {
   border: 1px solid #eee;
   display: grid;
@@ -69,11 +76,53 @@ ul {
   padding: 18px;
 }
 
-.custom-card {
-  width: 50%;
-  margin: 140px;
-  padding: 20px;
-  border-radius: 40px;
+.devise__grid_container h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.devise__grid_container .sign_in {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.devise__grid_container .sign_up {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.devise__grid_container .txt_input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+}
+
+.devise__grid_container .bttn_login {
+  margin-top: 5px;
+  padding: 10px;
+  width: 80%;
+  background: #3778c2 !important;
+  border: 0;
+  color: #fff;
+}
+
+.devise__grid_container .bttn_signup {
+  margin-top: 5px;
+  padding: 10px;
+  width: 80%;
+  background: #3778c2 !important;
+  border: 0;
+  color: white;
+}
+
+.devise__grid_container .bttn_success {
+  background-color:  #0275d8;
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  border: 0 solid;
+  color: #fff;
 }
 
 /* add responsive css */
