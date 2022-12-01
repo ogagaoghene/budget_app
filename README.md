@@ -85,13 +85,17 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Video Link <a name="video-demo"></a>
+
+- [Shared Video Link](https://www.loom.com/share/2e354b12e0dc4179ae0b0232bb22fad8)👈
+
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://mysite-gden.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
