@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe Category, :type => :model do
-  subject {
-    described_class.new(name: "Foods",
-                        icon: "burger.jpg")
-  }
+RSpec.describe Category, type: :model do
+  subject do
+    described_class.new(name: 'Foods',
+                        icon: 'burger.jpg')
+  end
 
   it 'is not valid without a name' do
     subject.name = nil
