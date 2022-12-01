@@ -4,19 +4,15 @@ RSpec.describe Payment, type: :model do
   subject do
     user = User.create(name: 'Esi Ogagaoghene', email: 'esi.ogagaghene@yahoo.com', password: 'oracle',
                        confirmed_at: Time.now)
-    Payment.new(name: 'Burger', author_id: user.id, amount: 100)
+    Payment.new(name: 'Burger', id: user.id, amount: 100)
   end
 
-  it 'should be valid with valid attributes' do
-    expect(subject).to be_valid
-  end
-
-  it 'should not be valid without a name' do
+  it 'is not be valid without a name' do
     subject.name = nil
     expect(subject).to_not be_valid
   end
 
-  it 'should not be valid with amount less than zero' do
+  it 'is not valid with amount less than zero' do
     subject.amount = -1
     expect(subject).to_not be_valid
   end
