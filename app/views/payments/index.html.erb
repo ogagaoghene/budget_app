@@ -1,5 +1,6 @@
 <section>
-  <h2 class="text-center">Payments</h2>
+  <h2 class="centralize">Payments</h2>
+  <span class="centralize"><hr /></span>
   <div class="text-secondary text-center">Category - <%= @category.name %></div>
   <p>Total price: $<%= @category.total_price %></p>
   <% unless @payments.empty? %>
@@ -7,5 +8,5 @@
   <% else %>
     <p>No payments available</p>
   <% end %>
-  <%= link_to 'Add a new payment', new_payment_path, class: 'btn bg-sec w-100 text-light' %>
+  <%= link_to 'Add payment', new_payment_path, class: 'btn bg-sec w-100 text-light' %>
 </section>

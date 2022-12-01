@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Payment, type: :model do
   subject do
-    user = User.create(name: 'Esi Ogagaoghene', email: 'esi.ogagaghene@yahoo.com', password: 'oracle', confirmed_at: Time.now)
+    user = User.create(name: 'Esi Ogagaoghene', email: 'esi.ogagaghene@yahoo.com', password: 'oracle',
+                       confirmed_at: Time.now)
     Payment.new(name: 'Burger', author_id: user.id, amount: 100)
   end
 

@@ -2,10 +2,11 @@ require 'rails_helper'
 
 RSpec.describe Category, type: :model do
   subject do
-    user = User.create(name: 'Esi Ogagaoghene', email: 'esi.ogagaghene@yahoo.com', password: 'oracle', confirmed_at: Time.now)
-    category = Category.create(user_id: user.id, name: 'Foods', icon: 'burger.jpg')
+    user = User.create(name: 'Esi Ogagaoghene', email: 'esi.ogagaghene@yahoo.com', password: 'oracle',
+                       confirmed_at: Time.now)
+    Category.create(user_id: user.id, name: 'Foods', icon: 'burger.jpg')
   end
-  
+
   it 'should be valid with valid attributes' do
     expect(subject).to be_valid
   end
