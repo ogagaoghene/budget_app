@@ -59,11 +59,26 @@ ul {
   padding: 0 !important;
 }
 
+.centralize {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .custom-card {
   width: 50%;
   margin: 140px;
   padding: 20px;
   border-radius: 40px;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 16px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 18px;
 }
 
 .devise__grid_container {

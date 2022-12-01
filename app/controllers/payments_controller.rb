@@ -31,4 +31,4 @@ class PaymentsController < ApplicationController
   def payment_params
     params.require(:new_payment).permit(:name, :amount, category_payments: [category_ids: []])
   end
-
+end

@@ -16,15 +16,15 @@ RSpec.feature 'Logins', type: :feature do
 
     scenario 'Submit form with incorrect email and password' do
       within 'form' do
-        fill_in 'Email', with: 'brian@gmail.com'
-        fill_in 'Password', with: '123456'
+        fill_in 'Email', with: 'esi.ogagaoghene@yahoo.com'
+        fill_in 'Password', with: 'oracle'
       end
       click_button 'Log in'
       expect(page).to have_content 'Invalid Email or password.'
     end
 
     scenario 'Submit form with correct email and password' do
-      @user = User.create(name: 'brian', email: 'brian@gmail.com', password: '123456', confirmed_at: Time.now)
+      @user = User.create(name: 'Esi Ogagaoghene', email: 'esi.ogagaoghene@yahoo.com', password: 'oracle', confirmed_at: Time.now)
       within 'form' do
         fill_in 'Email', with: @user.email
         fill_in 'Password', with: @user.password
