@@ -169,6 +169,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 - bundle exec rspec spec/views/
 - bundle exec rspec spec/models/
+- bundle exec rspec spec/
 
 ### Deployment
 
