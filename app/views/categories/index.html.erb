@@ -1,0 +1,10 @@
+<section>
+  <h2 class="centralize">Categories</h2>
+  <span class="centralize"><hr /></span>
+  <% unless @categories.empty? %>
+    <%= render 'list' %>
+  <% else %>
+    <p class="fw-bold">No categories available</p>
+  <% end %>
+  <%= link_to 'Add category', new_category_path, class: 'btn bg-sec w-100 text-light fw-bold' %>
+</section>

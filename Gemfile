@@ -8,6 +8,9 @@ ruby '3.1.2'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
 
+# Use devise for user authentication
+gem 'devise'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
@@ -53,6 +56,8 @@ gem 'bootsnap', require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'letter_opener'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -72,3 +77,12 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
+
+gem 'bullet'
+gem 'cancancan'
+gem 'ffi'
+gem 'rails-controller-testing', '~> 1.0'
