@@ -87,7 +87,7 @@
 
 ## 🚀 Video Link <a name="video-demo"></a>
 
-- [Shared Video Link](https://www.loom.com/share/2e354b12e0dc4179ae0b0232bb22fad8)👈
+- [Shared Video Link](https://www.loom.com/share/b643ec852f974cc688d818a988d0e046)👈
 
 <!-- LIVE DEMO -->
 
